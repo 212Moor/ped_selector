@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    background: transparent;
+    color: white;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100vh;
+}
+
+#menu {
+    width: 420px;
+    height: 90vh;
+    margin-right: 40px;
+    background: rgba(15, 15, 15, 0.85);
+    backdrop-filter: blur(8px);
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+#menu h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#search {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    background: rgba(255,255,255,0.1);
+    color: white;
+    outline: none;
+}
+
+#list {
+    flex: 1;
+    overflow-y: auto;
+    background: rgba(0,0,0,0.3);
+    border-radius: 8px;
+    padding: 8px;
+}
+
+.item {
+    padding: 6px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.item:hover {
+    background: rgba(255,255,255,0.1);
+}
+
+button {
+    margin-top: 10px;
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+#apply {
+    background: #5cb85c;
+    color: white;
+}
+#apply:hover {
+    background: #4cae4c;
+}
+
+#close {
+    background: #d9534f;
+    color: white;
+}
+#close:hover {
+    background: #c9302c;
+}
+
+#list::-webkit-scrollbar { width: 8px; }
+#list::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+}
